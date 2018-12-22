@@ -1,0 +1,67 @@
+body{
+	background-color: #182118;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.menu{
+	background-image: url(/CTEC3906/test.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 655px;
+	margin: 0;
+	padding: 0;
+}
+
+.menubar {
+	margin-bottom: 0.2em;
+	padding: 0em;
+	width: 100%;
+	display: none;
+}
+
+.menubar ul{
+  display: flex;
+  background-color: rgba(5,5,5,0.6);
+  justify-content: center;
+  list-style-type: none;
+  padding-top: 1.7em;
+  height: 4em;
+}
+
+.menubar li a {
+  font-size: 1.3em;
+  color: white;
+  margin: 2em;
+  text-decoration: none;
+  text-align: center;
+}
+
+.menubar li a:hover:not(.active) {
+  text-decoration: underline;
+  color: white;
+  cursor: pointer;
+}
+
+.menubar_icon {
+  cursor: pointer;
+  margin: auto;
+  width: 2.2em;
+  position: relative;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 2.2em;
+  height: 0.3em;
+  background-color: #a7b3a5;
+  margin-bottom: 0.4em;
+}
+
+.menubar_icon :hover{
+	background-color: green;
+} 
+
