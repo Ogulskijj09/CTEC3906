@@ -9,12 +9,13 @@ body{
 }
 
 .menu{
-	background-image: url(/CTEC3906/test.jpg);
+	background-image: url(/CTEC3906/resources/images/homepageScroll/1.jpg);
 	background-size: cover;
 	background-position: center;
-	height: 655px;
+	height: 649px;
 	margin: 0;
 	padding: 0;
+  transition: background-image 0.5s ease-in-out;
 }
 
 .menubar {
@@ -52,6 +53,7 @@ body{
   margin: auto;
   width: 2.2em;
   position: relative;
+  opacity: 1;
 }
 
 .bar1, .bar2, .bar3 {
