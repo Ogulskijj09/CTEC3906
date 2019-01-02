@@ -71,10 +71,14 @@ if (window.getComputedStyle(bar, null).getPropertyValue("display") == "block"){
 }
 
 window.addEventListener('scroll', () => {
+
+var x = window.matchMedia("(min-width: 500px)");
+console.log(x);
+
+if (x.matches) {
+	
 	scrollcounter++;
-	window.scrollTo(0, 0);
 	var menupic = document.getElementById("menu");
-	menupic.style.backgroundAttachment = "fixed";
 	var img1 = "url(/CTEC3906/resources/images/homepageScroll/1.5.jpg)";
 	var img2 = "url(/CTEC3906/resources/images/homepageScroll/2.jpg)";
 	var img3 = "url(/CTEC3906/resources/images/homepageScroll/2.5.jpg)";
@@ -88,41 +92,55 @@ window.addEventListener('scroll', () => {
 	var img11 = "url(/CTEC3906/resources/images/homepageScroll/6.5.jpg)";
 	console.log(scrollcounter);
 
-	if (scrollcounter >= 10 && scrollcounter < 20){
-		menupic.style.backgroundImage = img1;
+	if (scrollcounter < 15){
+		window.scrollTo(0, 0);
+		menupic.style.backgroundAttachment = "fixed";
 	}
 
-	if (scrollcounter >= 20 && scrollcounter < 30){
+	if (scrollcounter >= 15 && scrollcounter < 30){
+		window.scrollTo(0, 0);
+		menupic.style.backgroundImage = img1;
+	}
+	if (scrollcounter >= 30 && scrollcounter < 45){
+		window.scrollTo(0, 0);
 		menupic.style.backgroundImage = img2;
 	}
-		if (scrollcounter >= 30 && scrollcounter < 40){
+	if (scrollcounter >= 45 && scrollcounter < 60){
+		window.scrollTo(0, 0);
 		menupic.style.backgroundImage = img3;
 	}
-		if (scrollcounter >= 40 && scrollcounter < 50){
+	if (scrollcounter >= 60 && scrollcounter < 75){
+		window.scrollTo(0, 0);
 		menupic.style.backgroundImage = img4;
 	}
-		if (scrollcounter >= 50 && scrollcounter < 60){
+	if (scrollcounter >= 75 && scrollcounter < 90){
+		window.scrollTo(0, 0);
 		menupic.style.backgroundImage = img5;
 	}
-		if (scrollcounter >= 60 && scrollcounter < 70){
+	if (scrollcounter >= 90 && scrollcounter < 105){
+		window.scrollTo(0, 0);
 		menupic.style.backgroundImage = img6;
 	}
-	if (scrollcounter >= 70 && scrollcounter < 80){
+	if (scrollcounter >= 105 && scrollcounter < 120){
+		window.scrollTo(0, 0);
 		menupic.style.backgroundImage = img7;
 	}
-	if (scrollcounter >= 80 && scrollcounter < 90){
+	if (scrollcounter >= 120 && scrollcounter < 135){
+		window.scrollTo(0, 0);
 		menupic.style.backgroundImage = img8;
 	}
-	if (scrollcounter >= 90 && scrollcounter < 100){
+	if (scrollcounter >= 135 && scrollcounter < 150){
+		window.scrollTo(0, 0);
 		menupic.style.backgroundImage = img9;
 	}
-	if (scrollcounter >= 100 && scrollcounter < 110){
+	if (scrollcounter >= 150 && scrollcounter < 165){
+		window.scrollTo(0, 0);
 		menupic.style.backgroundImage = img10;
 	}
-	if (scrollcounter >= 110 && scrollcounter < 120){
+	if (scrollcounter >= 165 && scrollcounter < 180){
+		window.scrollTo(0, 0);
 		menupic.style.backgroundImage = img11;
+		menupic.style.backgroundAttachment = "scroll";
 	}
-	if (scrollcounter >= 120 && scrollcounter < 130){
-		menupic.style.backgroundImage = img12;
-	}
+}
 }) 

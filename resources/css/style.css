@@ -1,6 +1,7 @@
 body{
-	background-color: #182118;
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	background-color: black;
+	color: white;
 }
 
 * {
@@ -9,35 +10,113 @@ body{
 }
 
 .menu{
-	background-image: url(/CTEC3906/resources/images/homepageScroll/1.jpg);
+	background-image: url(/CTEC3906/resources/images/homepageScroll/hp.gif);
 	background-size: cover;
 	background-position: center;
-	height: 649px;
-	margin: 0;
-	padding: 0;
-  transition: background-image 0.5s ease-in-out;
+	height: 70vh;
+}
+
+.menudiv {
+	position: fixed;
+	width: 100%;
 }
 
 .menubar {
 	margin-bottom: 0.2em;
-	padding: 0em;
 	width: 100%;
 	display: none;
 }
 
 .menubar ul{
-  display: flex;
+  display: block;
   background-color: rgba(5,5,5,0.6);
-  justify-content: center;
   list-style-type: none;
   padding-top: 1.7em;
-  height: 4em;
+  height: 40vh;
+  text-align: center;
 }
 
 .menubar li a {
-  font-size: 1.3em;
+  font-size: 2em;
   color: white;
-  margin: 2em;
+  margin: 1em;
+  text-decoration: none;
+}
+
+.menubar_icon {
+  cursor: pointer;
+  width: 2.2em;
+  margin: auto;
+  position: relative;
+  opacity: 1;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 3em;
+  height: 0.5em;
+  background-color: #a7b3a5;
+  margin-bottom: 0.3em;
+}
+
+.hptext {
+	background-color: #000000;
+	color: #EAE3EA;
+	text-align: center;
+	padding: 2em 5em 5em 5em;
+	font-size: 1em;
+}
+
+.title {
+	height: 25vh;
+}
+
+.hptext h1{
+	text-align: center;
+	font-family: 'Cinzel Decorative';
+	text-decoration-line: underline;
+	font-weight: bold;
+	font-size: 2.5em;
+	padding-top: 1em;
+}
+
+.hptext h2{
+	text-align: center;
+	font-family: 'Cinzel Decorative';
+	text-decoration-line: underline;
+	font-weight: bold;
+	font-size: 0.9em;
+	padding-bottom: 12em;
+}
+
+.footer {
+	padding-top: 2em;
+	font-size: 0.5em;
+	height: 3em;
+	text-align: center;
+	color: #EAE3EA;
+	text-decoration-style: solid;
+	background-image: linear-gradient(black, #232323);
+}
+
+@media screen and (min-width: 500px) {
+
+.menu{
+	background-image: url(/CTEC3906/resources/images/homepageScroll/1.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	transition: background-image 0.5s ease-in-out;
+}
+
+.menubar ul{
+  display: flex;
+  height: 5em;
+  justify-content: center;
+ }
+
+ .menubar li a {
+  font-size: 1.8em;
+  margin: 1em;
   text-decoration: none;
   text-align: center;
 }
@@ -48,7 +127,7 @@ body{
   cursor: pointer;
 }
 
-.menubar_icon {
+ .menubar_icon {
   cursor: pointer;
   margin: auto;
   width: 2.2em;
@@ -63,7 +142,31 @@ body{
   margin-bottom: 0.4em;
 }
 
-.menubar_icon :hover{
-	background-color: green;
-} 
+.hptext {
+	font-size: 2em;
+	text-align: justify;
+	padding: 7em 7em 7em 7em;
+
+}
+
+.hptext h1{
+	font-size: 2em;
+}
+
+.title {
+	padding-bottom: 4em;
+}
+
+.textbar {
+	background-image: url(/CTEC3906/resources/images/textbg.jpg);
+	background-size: cover;
+	background-position: center;
+	color: black;
+	padding: 1em;
+}
+
+.footer {
+	font-size: 1em;
+}
+}
 
