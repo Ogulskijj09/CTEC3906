@@ -1,0 +1,259 @@
+body{
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	background-color: black;
+	color: white;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.menudiv {
+	position: fixed;
+	width: 100%;
+}
+
+.menubar {
+	margin-bottom: 0.2em;
+	width: 100%;
+	display: none;
+}
+
+.menubar ul{
+  display: block;
+  background-color: rgba(5,5,5,0.6);
+  list-style-type: none;
+  padding-top: 1.7em;
+  height: 40vh;
+  text-align: center;
+}
+
+.menubar li a {
+  font-size: 2em;
+  color: white;
+  margin: 1em;
+  text-decoration: none;
+}
+
+.menubar_icon {
+  cursor: pointer;
+  width: 2.2em;
+  margin: auto;
+  position: relative;
+  opacity: 1;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 3em;
+  height: 0.5em;
+  background-color: #a7b3a5;
+  margin-bottom: 0.3em;
+}
+
+.navigator {
+	height: 90vh;
+	display: flex;
+}
+
+.left {
+	height: 90vh;
+	width: 15vw;
+}
+
+.la {
+  width: 0; 
+  height: 0; 
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent; 
+  border-right:20px solid grey;
+  margin-top: 45vh;
+  display: none; 
+}
+
+.middle {
+	height: 90vh;
+	width: 70vw;
+}
+
+.fit {
+	margin: 10vh auto 0 auto;
+	height: 70vh;
+	width: 40vh;
+	background-image: url(/CTEC3906/resources/images/lookbook/fit1.jpg);
+	background-position: center;
+	background-size: cover;
+	transition: background-image 0.5s ease-in-out;
+}
+
+.desc {
+	text-align: center;
+	border: solid;
+	border-color: grey;
+	border-width: 0.2em;
+	padding: 0.2em;
+}
+
+.name {
+	font-family: 'Cinzel Decorative';
+	font-size: 2em;
+}
+
+.right {
+	height: 90vh;
+	width: 15vw;
+}
+
+.ra {
+  width: 0; 
+  height: 0; 
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent; 
+  border-left:20px solid grey;
+  margin-top: 45vh;
+  display: block; 
+  float: right;
+}
+
+.explore {
+	display: none;
+	margin-top: 10vh;
+	border: solid;
+	border-color: grey;
+	border-width: 0.2em;
+}
+
+.leftimg{
+	height: 50vh;
+	width: 30vw;
+	background-image: url(/CTEC3906/resources/images/lookbook/1/1.1.jpg);
+	background-position: center;
+	background-size: cover;
+}
+
+.maintext{
+	height: 50vh;
+	width: 40vw;
+}
+
+.rightimg{
+	height: 50vh;
+	width: 30vw;
+	background-image: url(/CTEC3906/resources/images/lookbook/1/1.2.jpg);
+	background-position: center;
+	background-size: cover;
+}
+
+.footer {
+	margin-top: 5vh;
+	padding-top: 2em;
+	font-size: 0.5em;
+	height: 10vh;
+	bottom: 0;
+	text-align: center;
+	color: #EAE3EA;
+	text-decoration-style: solid;
+	background-image: linear-gradient(black, #232323);
+}
+
+.itemlist {
+	padding: 1em 0.3em 1em 0.3em;
+	text-align: center;
+}
+
+@media screen and (min-width: 500px) {
+
+.menubar ul{
+  display: flex;
+  height: 5em;
+  justify-content: center;
+ }
+
+ .menubar li a {
+  font-size: 1.8em;
+  margin: 1em;
+  text-decoration: none;
+  text-align: center;
+}
+
+.menubar li a:hover:not(.active) {
+  text-decoration: underline;
+  color: white;
+  cursor: pointer;
+}
+
+ .menubar_icon {
+  cursor: pointer;
+  margin: auto;
+  width: 2.2em;
+  position: relative;
+  opacity: 1;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 2.2em;
+  height: 0.3em;
+  background-color: #a7b3a5;
+  margin-bottom: 0.4em;
+}
+
+}
+
+@media screen and (min-width: 1000px) {
+
+.mainbody {
+	display: flex;
+}
+
+.navigator {
+	padding: 0 2vw 0 3vw;
+}
+
+.left {
+	height: 90vh;
+	width: 10vw;
+}
+
+.middle{
+	height: 90vh;
+	width: 30vw;
+}
+
+.right {
+	height: 90vh;
+	width: 10vw;
+}
+
+.explore {
+	width: 43vw;
+	height: 80vh;
+	display: block;
+}
+
+.leftimg {
+	height: 40vh;
+	width: 20vw;
+}
+
+.itemlist {
+	float: right;
+	width: 20vw;
+	font-size: 1.1em;
+	padding: 0.3em;
+}
+
+.maintext {
+	width: 20vw;
+	float: right;
+}
+
+.rightimg {
+	height: 40vh;
+	width: 20vw;
+}
+
+.footer {
+	height: 3vh;
+}
+
+}
