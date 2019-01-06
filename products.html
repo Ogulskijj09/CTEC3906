@@ -1,30 +1,104 @@
 <!DOCTYPE html>
-<html>
-<head>
-		<title>Regrowth by The Garmer's Market - Homepage</title>
-		<link rel="stylesheet" type="text/css" href="resources/css/products.css">
-		<script type="text/javascript" src="resources/js/menubar.js"></script>
-		<script type="text/javascript" src="resources/js/products.js"></script>
-		<link href='https://fonts.googleapis.com/css?family=Cinzel Decorative' rel='stylesheet'>
+<html lang = "en">
+
+	<title>Regrowth by The Garmer's Market - Homepage</title>
+	<link rel="stylesheet" type="text/css" href="resources/css/products.css">
+	<script src="resources/js/menubar.js"></script>
+	<script src="resources/js/products.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Cinzel&20Decorative' rel='stylesheet'>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
 </head>
 
 <body>
 	<div class="menudiv">
-			<div class="menubar" id="menubar">
-				<ul>
-  					<li><a href="homepage.html">Homepage</a></li>
-  					<li><a href="lookbook.html">Lookbook</a></li>
-  					<li><a href="products.html">Products</a></li>
-  					<li><a href="about.html">About us</a></li>
- 				</ul>
+		<div class="menubar" id="menubar">
+			<ul>
+  				<li><a href="homepage.html">Homepage</a></li>
+  				<li><a href="lookbook.html">Lookbook</a></li>
+  				<li><a href="products.html">Products</a></li>
+  				<li><a href="about.html">About us</a></li>
+ 			</ul>
+		</div>
+
+		<div class="menubar_icon" id="mbi">
+  			<div class="bar1"></div>
+  			<div class="bar2"></div>
+  			<div class="bar3"></div>
+		</div>
+	</div>
+
+	<div class="mainpage">
+		<div class="prodlist">
+
+			<div class="product1" id="prod1">
+				<div class="p1img1"></div>
+				<div class="p1title">
+					<p>Prada pink fur belt</p>
+				</div>				
 			</div>
 
-			<div class="menubar_icon" id="mbi" onclick="hiddenMenu()">
-  				<div class="bar1"></div>
-  				<div class="bar2"></div>
-  				<div class="bar3"></div>
+			<div class="product2" id="prod2">
+				<div class="p2img1"></div>
+				<div class="p2title">
+					<p>True religion sliders</p>
+				</div>				
+			</div>
+
+			<div class="product3" id="prod3">
+				<div class="p3img1"></div>
+				<div class="p3title">
+					<p>Rick Owens longsleeve</p>
+				</div>				
+			</div>
+
+			<div class="product4" id="prod4">
+				<div class="p4img1"></div>
+				<div class="p4title">
+					<p>Stone island SP joggers</p>
+				</div>				
+			</div>
+
+			<div class="product5" id="prod5">
+				<div class="p5img1"></div>
+				<div class="p5title">
+					<p>vivienne westwood trousers</p>
+				</div>				
+			</div>
+
+			<div class="product6" id="prod6">
+				<div class="p6img1"></div>
+				<div class="p6title">
+					<p>Supreme hooded shirt</p>
+				</div>
 			</div>
 		</div>
+
+		<div class="viewer" id="viewer">
+			<span class="cross" id="exit">&times;</span>
+			<div class="pviewer">
+				<div class="mainimage">
+					<img src="/CTEC3906/resources/images/prada1.jpg" class="mimg" id="mainimg" alt="frontimage">
+				</div>
+				<div class="iconimages">
+					<img src="/CTEC3906/resources/images/prada1.jpg" class="simg" id="img2" alt="backimage">
+					<img src="/CTEC3906/resources/images/prada1.jpg" class="simg" id="img3" alt="taggedimage">
+				</div>
+
+				<div class="ptext">
+					<p id="title">title</p>
+					<p id="rrp">£0</p>
+					<p id="price">£0</p>
+					<p id="desc"> Size: x <br> Condition: DSWT </p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		<p>Designed by Joseph Ogulskij for TGM</p>
+	</div>
+	
 </body>
 
 </html>

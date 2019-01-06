@@ -1,12 +1,11 @@
-var scrollcounter = 0;
-
-function hiddenMenu() {
+window.onload=function() {
 
 var bar = document.getElementById("menubar");
 var icon = document.getElementById("mbi");
 var baropac;
 var iconopac;
 
+icon.addEventListener("click", function(){
 if (window.getComputedStyle(bar, null).getPropertyValue("display") == "none"){
 	iconopac = 1;
     icon.style.opacity = iconopac;
@@ -68,4 +67,5 @@ if (window.getComputedStyle(bar, null).getPropertyValue("display") == "block"){
 			}
 		}, 100);
 	}
+})
 }

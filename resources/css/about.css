@@ -1,23 +1,30 @@
 body{
-	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-	background-color: black;
-	color: white;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  background-color: black;
+  color: white;
 }
 
 * {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.menu{
+  background-image: url(/CTEC3906/resources/images/homepageScroll/hp.gif);
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
 }
 
 .menudiv {
-	position: fixed;
-	width: 100%;
+  position: fixed;
+  width: 100%;
 }
 
 .menubar {
-	margin-bottom: 0.2em;
-	width: 100%;
-	display: none;
+  margin-bottom: 0.2em;
+  width: 100%;
+  display: none;
 }
 
 .menubar ul{
@@ -51,7 +58,55 @@ body{
   margin-bottom: 0.3em;
 }
 
+.hptext {
+  background-color: #000000;
+  color: #EAE3EA;
+  text-align: center;
+  padding: 2em 5em 5em 5em;
+  font-size: 1em;
+}
+
+.title {
+  height: 25vh;
+}
+
+.hptext h1{
+  text-align: center;
+  font-family: 'Cinzel Decorative';
+  text-decoration-line: underline;
+  font-weight: bold;
+  font-size: 2.5em;
+  padding-top: 1em;
+}
+
+.hptext h2{
+  text-align: center;
+  font-family: 'Cinzel Decorative';
+  text-decoration-line: underline;
+  font-weight: bold;
+  font-size: 0.9em;
+  padding-bottom: 12em;
+}
+
+.footer {
+  padding-top: 2em;
+  font-size: 0.5em;
+  height: 3em;
+  text-align: center;
+  color: #EAE3EA;
+  text-decoration-style: solid;
+  background-image: linear-gradient(black, #232323);
+}
+
 @media screen and (min-width: 500px) {
+
+.menu{
+  background-image: url(/CTEC3906/resources/images/homepageScroll/1.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  transition: background-image 0.5s ease-in-out;
+}
 
 .menubar ul{
   display: flex;
@@ -87,8 +142,31 @@ body{
   margin-bottom: 0.4em;
 }
 
+.hptext {
+  font-size: 2em;
+  text-align: justify;
+  padding: 7em 7em 7em 7em;
+
 }
 
-@media screen and (min-width: 1000px) {
-
+.hptext h1{
+  font-size: 2em;
 }
+
+.title {
+  padding-bottom: 4em;
+}
+
+.textbar {
+  background-image: url(/CTEC3906/resources/images/textbg.jpg);
+  background-size: cover;
+  background-position: center;
+  color: black;
+  padding: 1em;
+}
+
+.footer {
+  font-size: 1em;
+}
+}
+

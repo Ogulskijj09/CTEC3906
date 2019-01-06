@@ -2,6 +2,7 @@ body{
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	background-color: black;
 	color: white;
+	width: 100%;
 }
 
 * {
@@ -25,7 +26,7 @@ body{
   background-color: rgba(5,5,5,0.6);
   list-style-type: none;
   padding-top: 1.7em;
-  height: 40vh;
+  height: 30vh;
   text-align: center;
 }
 
@@ -51,7 +52,134 @@ body{
   margin-bottom: 0.3em;
 }
 
+.mainpage {
+	padding-top: 3em;
+}
+
+.product1, .product2, .product3, .product4, .product5, .product6 {
+	background-image: url(/CTEC3906/resources/images/textbg.jpg);
+  	background-size: cover;
+	width: 75vw;
+	height: 42vh;
+	margin: 0 auto 3em auto;
+	color: black;
+	font-weight: bold;
+}
+
+.p1img1, .p2img1, .p3img1, .p4img1, .p5img1, .p6img1 {
+  	background-size: cover;
+  	background-position: center;
+	width: 15em;
+	height: 15em;
+	margin: auto;
+}
+
+.p1title, .p2title, .p3title, .p4title, .p5title, .p6title {
+  font-family: 'Cinzel Decorative';
+	padding: 0.2em;
+	font-size: 1em;
+  font-weight: bold;
+	margin: 1em auto;
+	text-align: center;
+  height: auto;
+  background-color: white;
+  border: solid;
+}
+
+.p1img1 {
+  background-image: url(/CTEC3906/resources/images/products/product1/img1.jpg);
+}
+
+.p2img1 {
+  background-image: url(/CTEC3906/resources/images/products/product2/img1.jpg);
+}
+
+.p3img1 {
+  background-image: url(/CTEC3906/resources/images/products/product3/img1.jpg);
+}
+
+.p4img1 {
+  background-image: url(/CTEC3906/resources/images/products/product4/img1.jpg);
+}
+
+.p5img1 {
+  background-image: url(/CTEC3906/resources/images/products/product5/img1.jpg);
+}
+
+.p6img1 {
+  background-image: url(/CTEC3906/resources/images/products/product6/img1.jpg);
+}
+
+.viewer {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 2vh;
+  left: 0;
+  top: 0;
+  width: 99vw;
+  height: 100%;
+  background-color: black;
+}
+
+.pviewer {
+	position: relative;
+	margin: auto;
+	padding: 10vh 0;
+}
+
+.cross {
+	color: white;
+	position: absolute;
+	right: 2vw;
+	top: 0;
+	font-weight: bold;
+}
+
+.mainimage{
+	text-align: center;
+}
+
+.iconimages{
+	width: 50%;
+	text-align: center;
+	vertical-align: middle;
+	margin: auto;
+	padding: 1em;
+}
+
+.ptext{
+	font-size: 1em;
+	text-align: center;
+}
+
+.mimg{
+	width: 20em;
+	height: auto;
+	justify-content: center;
+}
+
+.simg {
+	height: auto;
+	width: 15vw;
+}
+
+.footer {
+	padding-top: 2em;
+	font-size: 0.5em;
+	height: 3em;
+	text-align: center;
+	color: #EAE3EA;
+	text-decoration-style: solid;
+	background-image: linear-gradient(black, #232323);
+}
+
 @media screen and (min-width: 500px) {
+
+.body{
+	min-width: 500px;
+	width: auto;
+}
 
 .menubar ul{
   display: flex;
@@ -60,7 +188,7 @@ body{
  }
 
  .menubar li a {
-  font-size: 1.8em;
+  font-size: 1.5em;
   margin: 1em;
   text-decoration: none;
   text-align: center;
@@ -87,8 +215,172 @@ body{
   margin-bottom: 0.4em;
 }
 
+.p1img1, .p2img1, .p3img1, .p4img1, .p5img1, .p6img1 {
+	width: 100%;
+	height: 70%;
+}
+
+.product1, .product2, .product3, .product4, .product5, .product6 {
+	background-image: url(/CTEC3906/resources/images/textbg.jpg);
+  	background-size: cover;
+	width: 75vw;
+	height: 75vh;
+	margin: 0 auto 3em auto;
+}
+
+.p1title, .p2title, .p3title, .p4title, .p5title, .p6title {
+  font-family: 'Cinzel Decorative';
+	padding: 0.2em;
+	font-size: 2em;
+	margin: 0.5em auto;
+}
+
+.footer {
+	font-size: 2em;
+	height: 3em;
 }
 
 @media screen and (min-width: 1000px) {
+.prodlist{
+		width: 100%;
+	}
 
+.product1, .product2, .product3, .product4, .product5, .product6 {
+	width: 40%;
+	height: 50vh;
+	margin: 0 4.9% 3em 4.9%;
+	justify-content: center;
+	display: inline-block;
 }
+
+.p1img1, .p2img1, .p3img1, .p4img1, .p5img1, .p6img1 {
+	display: block;
+ max-width:230px;
+  max-height:95px;
+}
+}
+/*
+.mainpage {
+	width: 100%;
+}
+
+.product1, .product2, .product3, .product4, .product5, .product6 {
+	background-image: url(/CTEC3906/resources/images/textbg.jpg);
+  	background-size: cover;
+	width: 75vw;
+	height: 45vh;
+	margin: 0 2em 2em 2em;
+	color: black;
+	font-weight: bold;
+}
+
+.p1img1, .p2img1, .p3img1, .p4img1, .p5img1, .p6img1 {
+  background-size: cover;
+  background-position: center;
+	width: 15em;
+	height: 15em;
+	margin: auto;
+}
+
+.p1img1 {
+  background-image: url(/CTEC3906/resources/images/products/product1/img1.jpg);
+}
+
+.p2img1 {
+  background-image: url(/CTEC3906/resources/images/products/product2/img1.jpg);
+}
+
+.p3img1 {
+  background-image: url(/CTEC3906/resources/images/products/product3/img1.jpg);
+}
+
+.p4img1 {
+  background-image: url(/CTEC3906/resources/images/products/product4/img1.jpg);
+}
+
+.p5img1 {
+  background-image: url(/CTEC3906/resources/images/products/product5/img1.jpg);
+}
+
+.p6img1 {
+  background-image: url(/CTEC3906/resources/images/products/product6/img1.jpg);
+}
+
+.p1title, .p2title, .p3title, .p4title, .p5title, .p6title {
+  font-family: 'Cinzel Decorative';
+	padding: 0.2em;
+	font-size: 3em;
+  font-weight: bold;
+	margin: 1em auto;
+	text-align: center;
+  width: 80%;
+  height: auto;
+  background-color: white;
+  border: solid;
+}
+
+.viewer {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 15vh;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+.pviewer {
+	position: relative;
+	margin: auto;
+	padding: 0;
+	width: 90vw;
+}
+
+.cross {
+	color: white;
+	position: absolute;
+	right: 2vw;
+	top: 0;
+	font-size: 10em;
+	font-weight: bold;
+}
+
+.mainimage{
+	width: 90vw;
+	height: auto;
+	text-align: center;
+}
+
+.iconimages{
+	width: 50%;
+	text-align: center;
+	vertical-align: middle;
+	margin: auto;
+	padding: 1em;
+}
+
+.ptext{
+	font-size: 3em;
+	text-align: center;
+}
+
+.simg {
+	height: auto;
+	width: 15vw;
+}
+
+.footer {
+  margin-top: 5vh;
+  padding-top: 2em;
+  font-size: 2em;
+  height: 5vh;
+  bottom: 0;
+  text-align: center;
+  color: #EAE3EA;
+  text-decoration-style: solid;
+  background-image: linear-gradient(black, #232323);
+}
+*/
